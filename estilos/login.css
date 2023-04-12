@@ -1,0 +1,75 @@
+body {
+    background-image: url(logeFondo.png);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 5%;
+    justify-content: center;
+}
+
+
+#log {
+    display: none;
+    text-decoration: none;
+    color: black;
+    margin-left: 200px;
+}
+
+#email {
+
+    margin-left: 150px;
+}
+
+#contraseña {
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+#bienvenido {
+    margin-top: 20px;
+    margin-left: 160px;
+    font-size: 30px;
+}
+
+.control {
+    background: rgb(185, 189, 184);
+}
+
+.mensaje {
+    display: flex;
+    width: 40%;
+    height: 40px;
+    justify-content: end;
+    margin: 5px;
+    margin-left: 70px;
+}
+.validacion1{
+    width: 55%;
+    height: 80px;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.validacion2{
+    height: 50px;
+}
+
+@media screen and (max-width:500px) {
+    body{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    } 
+}

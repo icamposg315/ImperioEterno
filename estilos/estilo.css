@@ -1,0 +1,383 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    color: rgb(185, 185, 44);
+}
+
+.menuprincipal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+#tienda{
+    display: flex;
+    background-color: rgb(185, 185, 44);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border-radius: 15%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#tienda:hover{
+    background-color: rgb(140, 22, 13);
+}
+.carrito{
+    font-size: large;
+   justify-content: center;
+}
+li{
+    list-style: none;
+    
+}
+a{
+    color: rgb(185, 185, 44); 
+    text-decoration: none;
+
+}
+
+button{
+    background:  rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(185, 185, 44); 
+    
+}
+button:hover{
+    background: rgb(140, 22, 13);
+    border-radius: 5px;
+   
+}
+.carrito:hover{
+    font-size: x-large;
+}
+.zona1{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    flex-direction: column;
+    align-content: center;
+}
+#imagen2{
+    width: 300px;
+    height: 350px;
+}
+#titulo1{
+    font-size: larger;
+    font-style:oblique;
+    scale: 150%;
+}
+.zona2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    
+}
+
+#textoautor{
+    width: 900px;
+    margin-top: 80px;
+}
+#imagenautor{
+    margin-left: 50px;
+    margin-top: 80px;
+
+}
+.zona2{
+    display: flex;
+    flex-wrap: wrap; 
+    align-content: center;
+}
+#textosintesis{
+    width: 85%;
+    margin: 150px;
+   
+}
+.zona4{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#explicacion{
+    width: 900px;
+    margin-top: 120px;
+    margin-left: 140px;
+   
+}
+.chapter1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 25px;
+
+   
+}
+#gota1{
+    width: 400px;
+    margin-top: 60px;
+}
+#gotaimagen1{
+    width: 20vw;
+    height: 30vw;
+    margin-top: 60px;
+    margin-left: 140px;
+    margin-right: 300px;
+}
+.chapter2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 25px;
+
+   
+}
+#gota2{
+    width: 400px;
+    margin-top: 60px;
+    margin-left: 140px;
+}
+#gotaimagen2{
+    width: 20vw;
+    height: 30vw;
+    margin-top: 60px;
+    margin-left: 300px;
+}
+.chapter3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 25px;
+
+   
+}
+#gota3{
+    width: 400px;
+    margin-top: 60px;
+}
+#gotaimagen3{
+    width: 20vw;
+    height: 30vw;
+    margin-top: 60px;
+    margin-left: 140px;
+    margin-right: 300px;
+}
+.chapter4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 25px;
+
+   
+}
+#gota4{
+    width: 400px;
+    margin-top: 60px;
+    margin-left: 140px;
+}
+#gotaimagen4{
+    width: 20vw;
+    height: 30vw;
+    margin-top: 60px;
+    margin-left: 300px;
+}
+
+.zona5{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+  
+}
+#txtpersonajes{
+    width: 900px;
+    margin-top: 120px;
+    margin-left: 140px;
+   
+}
+.oscar{
+    display: flex;
+    flex-wrap: wrap; 
+
+   
+}
+#textooscar{
+    width: 400px;
+    margin-top: 60px;
+}
+#personajeimagen1{
+    width: 20vw;
+    height: 30vw;
+    margin-top: 60px;
+    margin-left: 140px;
+}
+.lucius{
+    display: flex;
+    flex-wrap: wrap; 
+
+   
+}
+#textolucius{
+    width: 400px;
+    margin-top: 60px;
+    margin-right: 140px;
+}
+#personajeimagen2{
+    width: 20vw;
+    height: 30vw;
+    margin-top: 60px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+.vivia{
+    display: flex;
+    flex-wrap: wrap; 
+
+   
+}
+#textovivia{
+    width: 400px;
+    margin-top: 60px;
+}
+#personajeimagen3{
+    width: 20vw;
+    height: 30vw;
+    margin-top: 60px;
+    margin-left: 140px;
+}
+.gnaea{
+    display: flex;
+    flex-wrap: wrap; 
+
+   
+}
+#textognaea{
+    width: 400px;
+    margin-top: 60px;
+    margin-right: 140px;
+}
+#personajeimagen4{
+    width: 20vw;
+    height: 30vw;
+    margin-top: 60px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+@media screen and (max-width:500px) {
+    main{
+        width:100px
+    
+    } 
+}
+
+i{
+    color: black;
+    scale: 150%;
+    padding-top: 5px;
+}
+.marco{
+    border-style: solid; 
+    border-width: 6px; 
+    border-color: rgb(185, 185, 44);
+}
+hr {
+    height: 0.5px;
+    width: 50%;
+    background-color:rgb(185, 185, 44);
+    margin-top: 100px;
+    border-style: none;
+}
+.inicio{
+    margin-left: 45px;
+}
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    
+}
+
+form {
+    display: flex;
+    background: rgb(35 35 35);
+    text-align: center;
+    margin-top: 70px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.control {
+    background: rgb(185, 189, 184);
+}
+
+.final{
+    color: black;
+    font-size: larger;
+    background-color: white;
+    border: 5px outset white;
+}
+
+.pie{
+    background-color: rgb(185, 185, 44);
+    height: 140px;
+    width: 100%;
+    color: black;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 25px;
+}
+.condiciones{
+    display: grid;
+    justify-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.mensaje{
+    padding: 5px;
+    width: 100%;
+    height: 15px;
+}
+
+.condicionesEspecial{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.boton{
+    display: none;
+}
+.cajaboton{
+    display: flex;
+    height: 75px;
+    width: 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#logear{
+
+    border: 2px outset rgb(185, 185, 44);
+    width: 85px;
+    border-radius: 20px;
+    height: 55px;
+    margin: 0px;
+    padding: 0px;
+}
+#logear:hover{
+
+    background-color: rgb(0, 0, 0);
+}
