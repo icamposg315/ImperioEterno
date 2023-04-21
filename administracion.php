@@ -17,7 +17,7 @@ $resultado4 = $database->getAllClientes();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="administracion.css">
-    <link rel="icon" type="image/x-icon" href="cabeza.ico">
+    <link rel="icon" type="image/x-icon" href="LenguajesDeMarcas/cabeza.ico">
     <title>Administrador</title>
 </head>
 
