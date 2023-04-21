@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="cabeza.ico">
+    <link rel="stylesheet" href="estilos/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <form action="" class="login">
+        <h2 id="bienvenido">Grata civis</h2>
+        <label class="validacion1">
+            <input class="control" onblur="validarEmail()" placeholder="Email" type="email" name="email" id="email">
+            <span class="mensaje"></span>
+        </label>
+
+        <label class="validacion1">
+            <input class="control" onblur="validarContrasena()" placeholder="Contraseña" type="password"
+                name="contraseña" id="contraseña">
+            <span class="mensaje"></span>
+        </label>
+        <label class="validacion2">
+            <a id="log" href="../Un Imperio Eterno/Administracion.html" target="_blank">
+                <h2>LOG</h2>
+            </a>
+        </label>
+    </form>
+
+</body>
+<script src="Validaciones/validacionLogin.js"></script>
+
+</html>

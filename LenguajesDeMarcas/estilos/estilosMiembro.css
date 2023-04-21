@@ -1,0 +1,115 @@
+body {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(final1.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.miembro {
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+form {
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 40vw;
+
+}
+
+.control {
+    background: rgb(185, 189, 184);
+}
+
+#unete {
+    margin-top: 10px;
+    background: rgb(215, 228, 33);
+    border: 2px solid rgb(14, 13, 14);
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+h1 {
+    background: rgb(215, 228, 33);
+    border: 2px solid rgb(14, 13, 14);
+    color: black;
+}
+
+ul {
+    border: 2px solid rgb(14, 13, 14);
+    background: rgb(215, 228, 33);
+    width: 550px;
+    border-radius: 10px;
+    color: black;
+}
+
+#acepto {
+    color: black;
+}
+
+.comunidad {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 55vw;
+    background-color: grey;
+    border: 5px outset rgb(171, 168, 168);
+
+}
+
+.mensaje {
+    display: flex;
+    height: 15px;
+}
+
+.mensajeError {
+    display: flex;
+    height: 75px;
+}
+
+.cajaboton {
+    height: 75px;
+    width: 150px;
+    display: contents;
+}
+
+.boton {
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+    main {
+        width: 100px
+    }
+
+    .comunidad {
+        overflow: hidden;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .mensaje {
+        display: flex;
+        height: 25px;
+    }
+
+    .boton {
+        display: none;
+    }
+}
