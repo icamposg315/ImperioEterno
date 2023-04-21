@@ -5,6 +5,7 @@ $database = new database();
 $resultado = $database->getAllPersonajes();
 $resultado2 = $database->getAllGotas();
 $resultado3 = $database->getAllComentarios();
+$resultado4 = $database->getAllClientes();
 
 
 ?>
@@ -123,7 +124,38 @@ $resultado3 = $database->getAllComentarios();
             </tr>
         </tbody>
     </table>
+    <h1>Clientes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Email</th>
+                <th>Libro_id</th>
+                <th>Opción</th>
+            </tr>
+        </thead>
 
+        <tbody>
+            <tr>
+                <?php
+                foreach ($resultado4 as $row) {
+                    echo "<tr><td>" . $row['id'] . "</td>";
+                    echo "<td>" . $row['nombre'] . "</td>";
+                    echo "<td>" . $row['apellidos'] . "</td>";
+                    echo "<td>" . $row['email'] . "</td>";
+                    echo "<td>" . $row['libro_id'] . "</td>";
+                    echo "<td>" .   "<button>Eliminar</button>
+                    <button>Editar</button>
+                    <button>Mostrar</button>" . "</td></tr>";
+                }
+
+                ?>
+
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>

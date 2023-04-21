@@ -10,7 +10,7 @@ class Database
         $port = '3306';
         $user = 'root';
         $password = '';
-        $db = 'libro';
+        $db = 'libroimperioeterno';
 
         $dsn = "$driver:dbname=$db;$host:host;$port:port";
 
@@ -51,4 +51,14 @@ class Database
 
         return $resultado;
     }
+
+    public function getAllClientes()
+    {
+        $sql = "SELECT * FROM cliente";
+        $resultado = self::conectar()->query($sql);
+
+        return $resultado;
+    }
+
+      
 }
