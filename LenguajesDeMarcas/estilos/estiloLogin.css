@@ -22,7 +22,7 @@ body {
     display: none;
     text-decoration: none;
     color: black;
-    margin-left: 200px;
+    margin-left: 215px;
 }
 
 #email {
@@ -47,7 +47,7 @@ body {
 
 .mensaje {
     display: flex;
-    width: 32%;
+    width: 42%;
     height: 45px;
     justify-content: center;
     margin: 5px;

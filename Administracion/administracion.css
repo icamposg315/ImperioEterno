@@ -1,0 +1,90 @@
+body{
+    background-color: rgb(197, 176, 87);
+    text-align: -webkit-center;
+
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#crear {
+    margin-bottom: 30px;
+}
+
+table {
+    border: 2px solid rgb(14, 13, 14);
+}
+
+tr {
+    border: 2px solid rgb(14, 13, 14);
+}
+
+th {
+    border: 2px solid rgb(234, 1, 20);
+    background: rgb(168, 161, 161);
+}
+
+td {
+    border: 2px solid rgb(14, 13, 14);
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px;
+    text-decoration: none;
+   
+}
+
+
+a:hover{
+    background-color: white;
+    color:grey;
+}
+
+h1{
+    background-color: rgb(157, 137, 48);
+    border-radius: 1px;
+    border:1px inset rgb(197, 176, 87);
+    width: 25%;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+}
+
+header {
+    border: 2px solid rgb(234, 1, 20);
+    background: rgb(168, 161, 161);
+    opacity: 0.9;
+    display: flex;
+    width: 100vw;
+    margin-bottom: 50px;
+    height: 40px;
+    padding: 2px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.user-profile{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}

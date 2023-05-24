@@ -1,6 +1,6 @@
 <?php
 
-require_once("Database.php");
+require_once("../Database.php");
 
 $database = new Database();
 $resultado = $database->getGotas(1);
@@ -83,7 +83,7 @@ $personaje4 = $database->getPersonajes(4);
                     </button>
                     <button id="logear">
                         <li>
-                            <a class="flex7" id="log" href="login.html" target="_blank">
+                            <a class="flex7" id="log" href="login.php" target="_blank">
                                 <p>LOGIN</p>
                             </a>
                         </li>
@@ -333,18 +333,18 @@ $personaje4 = $database->getPersonajes(4);
 
         <section class="formulario" id="contacto">
 
-            <form id="IDFormulario" method="" action="">
+            <form id="IDFormulario" action="../Administracion/Comentarios/save.php" method="POST">
                 <h2>Queremos conocer tu opinión</h2>
                 <label class="condiciones">
-                    <input id="nombre" onblur="validarNombre()" placeholder="nombre" type="text" name="">
+                    <input id="nombre" onblur="validarNombre()" name="nombre" placeholder="nombre" type="text" name="">
                     <span class="mensaje"></span>
                 </label>
                 <label class="condiciones">
-                    <input id="apellido" onblur="validarApellido()" placeholder="apellido" type="text" name="">
+                    <input id="apellido" onblur="validarApellido()"name="apellidos" placeholder="apellido" type="text" name="">
                     <span class="mensaje"></span>
                 </label>
                 <label class="condiciones">
-                    <input id="email" onblur="validarEmail()" placeholder="email" type="email" name="">
+                    <input id="email" onblur="validarEmail()" name="email" placeholder="email" type="email" name="">
                     <span class="mensaje"></span>
                 </label>
                 <label class="condiciones">¿Donde has conocido el libro?
@@ -362,18 +362,18 @@ $personaje4 = $database->getPersonajes(4);
                 </label>
                 <label class="condiciones">¿Que te ha parecido la idea del autor?.
 
-                    <textarea id="texto" placeholder="Pon un comentario" rows="10" cols="60" name="" id="comentario"></textarea>
+                    <textarea id="texto" name="texto" placeholder="Pon un comentario" rows="10" cols="60" name="" id="comentario"></textarea>
                     <span class="mensaje"></span>
                 </label>
                 <label class="condicionesEspecial">
                     <input id="check" onclick="validarCheckBox()" type="checkbox" name="">
                     <span class="mensaje">Acepto condiciones</span>
                     <div class="cajaboton">
-                        <button class="boton" id="enviar" onclick="validarCheckBox()">Enviar</button>
+                        <button type="submit" class="boton" id="enviar" onclick="validarCheckBox()">Enviar</button>
                     </div>
                 </label>
 
-                <a href="../Un Imperio Eterno/miembro.html" target="_blank" class="enlaceSocio">
+                <a href="../LenguajesDeMarcas/miembros.php" target="_blank" class="enlaceSocio">
                     <h2>¡Conviertete en un amigo del imperio!</h2>
                 </a>
             </form>

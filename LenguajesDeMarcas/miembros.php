@@ -22,24 +22,21 @@
 
         <section class="miembro">
 
-            <form method="" action="">
+            <form method="POST" action="../Administracion/Clientes/save.php">
                 <label>
-                    <input onblur="validarNombre()" class="control" placeholder="Nombre" type="text" name=""
-                        id="nombre">
+                    <input onblur="validarNombre()" name="nombre" class="control" placeholder="Nombre" type="text" id="nombre">
                     <span class="mensaje"></span>
                 </label>
                 <label>
-                    <input onblur="validarUsuario() " class="control" placeholder="Usuario" type="text" name=""
-                        id="user">
+                    <input onblur="validarUsuario() " name="apellidos" class="control" placeholder="Apellidos" type="text" id="user">
                     <span class="mensaje"></span>
                 </label>
                 <label>
-                    <input onblur="validarEmail()" class="control" placeholder="Email" type="email" name="" id="email">
+                    <input onblur="validarEmail()" name="email" class="control" placeholder="Email" type="email" id="email">
                     <span class="mensaje"></span>
                 </label>
                 <label>
-                    <input onblur="validarContrasena() " class="control" placeholder="Contraseña" type="password"
-                        name="Contraseña" id="contraseña">
+                    <input onblur="validarContrasena()" class="control" placeholder="Contraseña" type="password" name="Contraseña" id="contraseña">
                     <span class="mensajeError"></span>
                 </label>
                 </label>

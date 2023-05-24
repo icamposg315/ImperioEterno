@@ -1,5 +1,5 @@
-create database if not exists ImperioEterno;
-use ImperioEterno;
+create database if not exists LibroImperioEterno;
+use LibroImperioEterno;
 create table if not exists cliente (
 id int not null auto_increment primary key,
 nombre varchar(25),
@@ -9,6 +9,10 @@ libro_id int
 );
 
 insert into cliente values (NULL, "Rodrigo", "Ibañez Lopez", "rodrigo@gmail.com",1);
+insert into cliente values (NULL, "Sara", "Ibañez Lopez", "sarao@gmail.com",1);
+insert into cliente values (NULL, "Pedro", "Ibañez Lopez", "pedro@gmail.com",1);
+insert into cliente values (NULL, "Enrique", "Ibañez Lopez", "enrique@gmail.com",1);
+insert into cliente values (NULL, "Luis", "Ibañez Lopez", "luis@gmail.com",1);
 alter table cliente modify email varchar (50);
 
 
@@ -21,7 +25,7 @@ paginas int,
 precio decimal(2)
 );
 
-insert into libro values (null, "Un Imperio Eterno", "Daniel Correa Escribano", "Corren los primeros meses del año 2015. Vivimos en un mundo en el que el imperio romano no se ha desintegrado del todo. Su cultura, su ciudadanía y su heroísmo, siguen vivas en tres islas del mediterráneo y en su capital. Para una parte de la humanidad, tan solo son un reducto del pasado, un pueblo que vive a espaldas del resto del mundo, presuntamente ajenos a lo que ocurre a su alrededor. Otros muchos, entre los que se encuentra nuestro protagonista, Oscar López, un periodista del barrio de Carabanchel, viven obsesionados con los secretos que se ocultan en Roma. Las circunstancias llevaran al periodista a un viaje donde descubría que se oculta tras las sombras",385, 15);
+insert into libro values (null, "Un Impreio Eterno", "Daniel Correa Escribano", "Corren los primeros meses del año 2015. Vivimos en un mundo en el que el imperio romano no se ha desintegrado del todo. Su cultura, su ciudadanía y su heroísmo, siguen vivas en tres islas del mediterráneo y en su capital. Para una parte de la humanidad, tan solo son un reducto del pasado, un pueblo que vive a espaldas del resto del mundo, presuntamente ajenos a lo que ocurre a su alrededor. Otros muchos, entre los que se encuentra nuestro protagonista, Oscar López, un periodista del barrio de Carabanchel, viven obsesionados con los secretos que se ocultan en Roma. Las circunstancias llevaran al periodista a un viaje donde descubría que se oculta tras las sombras",385, 15);
 
 create table if not exists comentario (
 id int not null auto_increment primary key,
@@ -33,6 +37,9 @@ comentario varchar(500)
 );
 
 insert into comentario values (null, "Rodrigo", "Ibañez Lopez", "rodrigo@gmail.com", "2022-03-23", "un gran libro");
+insert into comentario values (null, "Manuel", "Ibañez Lopez", "manuel@gmail.com", "2022-03-12", "Me encantó");
+insert into comentario values (null, "Sara", "Ibañez Lopez", "Sara@gmail.com", "2022-05-23", "Excelente");
+insert into comentario values (null, "Pedro", "Ibañez Lopez", "rodrigo@gmail.com", "2022-01-23", "un libro brillante");
 
 create table if not exists gotas_de_escritura (
 id int not null auto_increment primary key,
