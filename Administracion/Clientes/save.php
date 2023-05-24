@@ -6,4 +6,3 @@ require_once('../../Database.php');
 Database::saveCLIENTE($datos);
 
 header('Location: ../../LenguajesDeMarcas/index.php');
-?>

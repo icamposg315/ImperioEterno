@@ -13,18 +13,19 @@ if (!isset($_SESSION['user'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../administracion.css">
+    <link rel="icon" type="image/x-icon" href="../../LenguajesDeMarcas/cabeza.ico">
     <title>Crear</title>
 </head>
 
 <body>
-<header>
+    <header>
         <nav class="navbar">
             <div class="navbar-brand">
-                <a href="#" class="username" id="nameUser"><?php echo 'Bienvenido, '.$_SESSION['user']['nombre']?><i class="fas fa-caret-down"></i></a>
+                <a href="#" class="username" id="nameUser"><?php echo 'Bienvenido, ' . $_SESSION['user']['nombre'] ?><i class="fas fa-caret-down"></i></a>
             </div>
             <div class="user-profile">
                 <img src="" alt="" id="imageUser">
-                <a class="dropdown-item" href=""><i class="fas fa-user"></i>Ver Perfil</a>
+                <a class="dropdown-item" href="tablaClientes.php"><i class="fas fa-user"></i>Volver</a>
                 <a class="dropdown-item" href=""><i class="fas fa-cog"></i>Ajustes</a>
                 <a class="dropdown-item" href="../../sesion/logout.php"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a>
             </div>
@@ -36,7 +37,7 @@ if (!isset($_SESSION['user'])) {
         <input type="text" name="nombre" placeholder="Inserte el nombre del cliente">
         <input type="text" name="apellidos" placeholder="Inserte los apellidos">
         <input type="text" name="email" placeholder="Correo electrónico">
-        <input type="hidden" name="id_libro" placeholder="libro_id">
+        <input type="text" name="id_libro" placeholder="libro_id">
         <button type="submit">Enviar</button>
     </form>
 </body>

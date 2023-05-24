@@ -57,7 +57,7 @@ class Database
 
         return $resultado;
     }
-    
+
     public static function getAllPersonajes()
     {
         $sql = "SELECT * FROM personajes";
@@ -123,7 +123,7 @@ class Database
 
     public static function saveCLIENTE($datos)
     {
-        $sql = "INSERT INTO cliente (nombre, apellidos, email) VALUES ('$datos[0]', '$datos[1]', '$datos[2]')";
+        $sql = "INSERT INTO cliente (nombre, apellidos, email, libro_id) VALUES ('$datos[0]', '$datos[1]', '$datos[2]', $datos[3])";
         self::conectar()->exec($sql);
     }
 
@@ -171,10 +171,8 @@ class Database
 
     public static function findById($id, $tabla)
     {
-            $sql = "SELECT * FROM $tabla WHERE id = $id";
-            $cliente = self::conectar()->query($sql);
-            return $cliente->fetch(PDO::FETCH_ASSOC);
-
+        $sql = "SELECT * FROM $tabla WHERE id = $id";
+        $cliente = self::conectar()->query($sql);
+        return $cliente->fetch(PDO::FETCH_ASSOC);
     }
 }
-

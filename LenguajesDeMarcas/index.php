@@ -7,6 +7,7 @@ $resultado = $database->getGotas(1);
 $resultado2 = $database->getGotas(2);
 $resultado3 = $database->getGotas(3);
 $resultado4 = $database->getGotas(4);
+$resultado5 = $database->getSintesis();
 $personaje = $database->getPersonajes(1);
 $personaje2 = $database->getPersonajes(2);
 $personaje3 = $database->getPersonajes(3);
@@ -168,15 +169,11 @@ $personaje4 = $database->getPersonajes(4);
             <div id="textosintesis">
                 <!--Introduccion al libro-->
                 <h3>SINTESIS</h3>
-                <p>"Correnlos primeros meses del año 2015. Vivimos en un mundo en el que el imperio romano no
-                    se ha desintegrado del todo. Su cultura, su ciudadanía y su heroísmo, siguen vivas en tres
-                    islas del mediterráneo y en su capital. Para una parte de la humanidad, tan solo son un
-                    reducto del pasado, un pueblo que vive a espaldas del resto del mundo, presuntamente ajenos
-                    a lo que ocurre a su alrededor. Otros muchos, entre los que se encuentra nuestro
-                    protagonista, Oscar López, un periodista del barrio de Carabanchel, viven obsesionados con
-                    los secretos que se ocultan en Roma. Las circunstancias llevaran al periodista a un viaje
-                    donde descubría que se oculta tras las sombras [...]"
-                </p>
+                <?php
+                foreach ($resultado5 as $row) {
+                    echo '<p>' . $row['sintesis'] . '</p>';
+                }
+                ?>
 
             </div>
         </section>
@@ -340,7 +337,7 @@ $personaje4 = $database->getPersonajes(4);
                     <span class="mensaje"></span>
                 </label>
                 <label class="condiciones">
-                    <input id="apellido" onblur="validarApellido()"name="apellidos" placeholder="apellido" type="text" name="">
+                    <input id="apellido" onblur="validarApellido()" name="apellidos" placeholder="apellido" type="text" name="">
                     <span class="mensaje"></span>
                 </label>
                 <label class="condiciones">

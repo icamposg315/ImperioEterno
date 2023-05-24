@@ -7,5 +7,3 @@ require_once('../../Database.php');
 Database::updatePERSONAJES($datos);
 
 header('Location: tablaPersonajes.php');
-
-?>

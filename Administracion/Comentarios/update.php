@@ -7,5 +7,3 @@ require_once('../../Database.php');
 Database::updateCOMENTARIO($datos);
 
 header('Location: tablaComentario.php');
-
-?>

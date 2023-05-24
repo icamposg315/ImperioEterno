@@ -9,5 +9,3 @@ require_once('../../Database.php');
 Database::deleteCLIENTE($id);
 
 header('Location:tablaClientes.php');
-
-?>

@@ -6,4 +6,3 @@ require_once('../../Database.php');
 Database::saveCOMENTARIO($datos);
 
 header('Location: ../bienvenida.php');
-?>

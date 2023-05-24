@@ -9,6 +9,3 @@ require_once('../../Database.php');
 Database::deleteGOTAS($id);
 
 header('Location:tablaGotas.php');
-
-
-?>

@@ -7,5 +7,3 @@ require_once('../../Database.php');
 Database::updateGOTAS($datos);
 
 header('Location: tablaGotas.php');
-
-?>

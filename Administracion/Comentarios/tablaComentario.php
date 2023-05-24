@@ -23,14 +23,14 @@ if (!isset($_SESSION['user'])) {
 </head>
 
 <body>
-<header>
+    <header>
         <nav class="navbar">
             <div class="navbar-brand">
-                <a href="#" class="username" id="nameUser"><?php echo 'Bienvenido, '.$_SESSION['user']['nombre']?><i class="fas fa-caret-down"></i></a>
+                <a href="#" class="username" id="nameUser"><?php echo 'Bienvenido, ' . $_SESSION['user']['nombre'] ?><i class="fas fa-caret-down"></i></a>
             </div>
             <div class="user-profile">
                 <img src="" alt="" id="imageUser">
-                <a class="dropdown-item" href=""><i class="fas fa-user"></i>Ver Perfil</a>
+                <a class="dropdown-item" href="../bienvenida.php"><i class="fas fa-user"></i>Volver</a>
                 <a class="dropdown-item" href=""><i class="fas fa-cog"></i>Ajustes</a>
                 <a class="dropdown-item" href="../../sesion/logout.php"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a>
             </div>
@@ -65,7 +65,7 @@ if (!isset($_SESSION['user'])) {
                     echo '<td>' . $row["email"] . '</td>';
                     echo '<td>' . $row["fecha"] . '</td>';
                     echo '<td>' . $row["comentario"] . '</td>';
-                    echo '<td><a href="edit.php?id='.$row["id"].'">Editar</a><a href="delete.php?id='.$row["id"].'">Eliminar</a></td>';
+                    echo '<td><a href="edit.php?id=' . $row["id"] . '">Editar</a><a href="delete.php?id=' . $row["id"] . '">Eliminar</a></td>';
                 }
 
                 ?>

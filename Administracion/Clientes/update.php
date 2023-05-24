@@ -9,4 +9,3 @@
 
     // 4. Retornar al index.php
     header('Location: tablaClientes.php');
-?>

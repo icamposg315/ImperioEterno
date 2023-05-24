@@ -6,4 +6,3 @@ require_once('../../Database.php');
 Database::savePERSONAJES($datos);
 
 header('Location: ../bienvenida.php');
-?>

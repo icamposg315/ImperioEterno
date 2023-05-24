@@ -21,7 +21,7 @@ if (!isset($_SESSION['user'])) {
     <header>
         <nav class="navbar">
             <div class="navbar-brand">
-                <a href="#" class="username" id="nameUser"><?php echo 'Bienvenido, '.$_SESSION['user']['nombre']?><i class="fas fa-caret-down"></i></a>
+                <a href="#" class="username" id="nameUser"><?php echo 'Bienvenido, ' . $_SESSION['user']['nombre'] ?><i class="fas fa-caret-down"></i></a>
             </div>
             <div class="user-profile">
                 <img src="" alt="" id="imageUser">

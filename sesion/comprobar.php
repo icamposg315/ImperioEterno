@@ -11,7 +11,7 @@ if ($resultado == null) {
         session_start();
         $_SESSION['user'] = $resultado;
         header('location: ../Administracion/bienvenida.php');
-   } else {
+    } else {
         header('location: ../LenguajesDeMarcas/login.php');
     }
 }

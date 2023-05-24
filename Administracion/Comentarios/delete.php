@@ -9,5 +9,3 @@ require_once('../../Database.php');
 Database::deleteCOMENTARIO($id);
 
 header('Location:tablaComentario.php');
-
-?>
