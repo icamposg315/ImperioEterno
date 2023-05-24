@@ -32,7 +32,7 @@ if (!isset($_SESSION['user'])) {
                 <img src="" alt="" id="imageUser">
                 <a class="dropdown-item" href=""><i class="fas fa-user"></i>Ver Perfil</a>
                 <a class="dropdown-item" href=""><i class="fas fa-cog"></i>Ajustes</a>
-                <a class="dropdown-item" href="../sesion/logout.php"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a>
+                <a class="dropdown-item" href="../../sesion/logout.php"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a>
             </div>
         </nav>
     </header>
